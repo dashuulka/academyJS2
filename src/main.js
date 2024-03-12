@@ -1,5 +1,5 @@
-import Filter from './view/filter.js';
-import Sort from './view/sort.js';
+import FilterPointsView from './view/filter-points-view.js';
+import SortPointsView from './view/sort-points-view.js';
 import {render} from './render.js';
 import TripPresenter from './trip-presenter.js';
 
@@ -9,7 +9,7 @@ const siteMainElement = document.querySelector('.page-main');
 const siteSortElement = siteMainElement.querySelector('.trip-events');
 const tripPresenter = new TripPresenter({listContainer: siteSortElement});
 
-render(new Filter(), siteFilterElement);
-render(new Sort(), siteSortElement);
+render(new FilterPointsView(), siteFilterElement);
+render(new SortPointsView(), siteSortElement);
 
 tripPresenter.init();

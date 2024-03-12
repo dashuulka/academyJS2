@@ -1,9 +1,9 @@
 import {createElement} from '../render.js';
-import {createListTemplate} from '../template/list-template.js';
+import { createSortTemplate } from '../template/sort-template.js';
 
-export default class ListView {
+export default class SortPointsView {
   getTemplate() {
-    return createListTemplate();
+    return createSortTemplate();
   }
 
   getElement() {

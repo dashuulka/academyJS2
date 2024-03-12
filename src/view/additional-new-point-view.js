@@ -1,9 +1,9 @@
 import {createElement} from '../render.js';
-import {createListTemplate} from '../template/list-template.js';
+import {createNewPointTemplate} from '../template/additional-new-point-template.js';
 
-export default class ListView {
+export default class NewPointView {
   getTemplate() {
-    return createListTemplate();
+    return createNewPointTemplate();
   }
 
   getElement() {

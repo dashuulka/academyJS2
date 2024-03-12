@@ -1,9 +1,9 @@
 import {createElement} from '../render.js';
-import {createListTemplate} from '../template/list-template.js';
+import { createEditPointTemplate } from '../template/editing-form-template.js';
 
-export default class ListView {
+export default class EditPointView {
   getTemplate() {
-    return createListTemplate();
+    return createEditPointTemplate();
   }
 
   getElement() {
